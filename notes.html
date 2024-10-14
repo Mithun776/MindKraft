@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindKraft - Notes</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <header>
+        <h1>MindKraft</h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Semester 7 - Coming Soon</h2><br />
+        <section class="assignment-sections">
+            <div class="semester">
+                <h3>BDA (21CS71) &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem1-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Module</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 1</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 2</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 3</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 4</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>CC (21CS72) &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem2-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Module</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 1</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 2</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 3</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 4</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>IoT (21CS735) &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem2-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Module</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 1</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 2</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 3</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 4</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>NoSQL (21CS745) &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem2-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Module</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 1</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 2</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 3</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 4</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>EPM (21CV753) &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem2-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Module</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 1</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 2</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 3</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Module 4</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Module 5</option>
+                    </select>
+                </div>
+            </div>
+            <!-- More semesters can be added similarly -->
+        </section>
+
+        <br />
+
+        <h2>Semester 6</h2><br />
+        <section class="assignment-sections">
+            <div class="semester">
+                <h3>Coming soon &nbsp;</h3>
+                <!-- <div class="select-wrapper">
+                    <select id="sem1-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Subject</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_1/view?usp=sharing">Mathematics</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_2/view?usp=sharing">Physics</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>Assignment 2 &nbsp;</h3>
+                <div class="select-wrapper">
+                    <select id="sem2-subjects" onchange="openNotesPage(this)">
+                        <option value="">Select a Subject</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_3/view?usp=sharing">Chemistry</option>
+                        <option value="https://drive.google.com/file/d/FILE_ID_4/view?usp=sharing">Biology</option>
+                    </select>
+                </div>
+            </div> -->
+            <!-- More semesters can be added similarly -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MindKraft - Krafted by MK</p>
+    </footer>
+
+    <script>
+        function openNotesPage(selectElement) {
+            const value = selectElement.value;
+            if (value) {
+                window.open(value, '_blank');
+            }
+        }
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

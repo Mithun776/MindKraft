@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindKraft - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>MindKraft</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <div class="intro-text">
+                <h2>Welcome to MindKraft!</h2>
+                <p>MindKraft is your go-to platform for accessing assignment answers that serve as valuable references for your studies. Our resources are designed to help you enhance your understanding and prepare effectively for examinations.</p><br>
+                <h4>Why Choose MindKraft?</h4>
+                <p><strong>Trusted Resources:</strong> Our answers are meticulously created by referencing reliable notes and textbooks, ensuring you have access to quality information.</p>
+                <p><strong>Study Aid:</strong> Use our materials as a guide to deepen your understanding of key concepts and important questions that may arise in your coursework and examinations.</p><br>
+                <h4>Important Note:</h4>
+                <p>Please remember that while our platform provides helpful references, we cannot guarantee that the same questions will appear in your exams. It’s essential to approach your studies holistically and not rely solely on our materials.</p>
+                <p>Embrace your learning journey, and happy studying!</p><br>
+
+                <strong><a href="assignments.html" style="text-decoration: none;">Click here to get the Assignments</a></strong>
+            </div>
+            <div class="intro-image">
+                <img src="img1.png" alt="MindKraft Illustration">
+            </div>
+        </section>
+
+        <section class="scholars">
+            <h2>Famous Scholars of India</h2>
+
+            <div class="scholar">
+                <img src="https://imgs.search.brave.com/jfSQ1Pg7VRN0Ke8kuZ5x-ZoY4Hjd2woDez4ICPXTSHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZWxl/YnJpdHlib3Jucy5j/b20vYWRtaW4vYXNz/ZXRzL2ltYWdlcy9w/ZW9wbGUvQUt3Rk1D/RDY5alUyTXZKanZj/dXJfMjAxN18wM18y/MC5qcGc" alt="Sir M. Visvesvaraya">
+                <p>“Engineering is the art of making what you need from what you have.” - Sir M. Visvesvaraya</p>
+            </div>
+
+            <div class="scholar">
+                <img src="https://track2training.com/wp-content/uploads/2021/07/apj.jpg" alt="APJ Abdul Kalam">
+                <p>“Dream, Dream, Dream. Dreams transform into thoughts and thoughts result in action.” - APJ Abdul Kalam</p>
+            </div>
+
+            <div class="scholar">
+                <img src="https://imgs.search.brave.com/YRnhoXzSdDW0EueBR06B1fqr1OuEMQ3jJcVHHTzn7eU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2d3ZWIt/dW5pYmxvZy1wdWJs/aXNoLXByb2QvaW1h/Z2VzL3N1bmRhci0y/MDh4MjA4LndpZHRo/LTQwMC5mb3JtYXQt/d2VicC53ZWJw" alt="Sundar Pichai">
+                <p>“Technology is a great leveler. It is not a function of where you come from, but where you want to go.” - Sundar Pichai</p>
+            </div>
+            
+            <!-- Add more scholars similarly -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MindKraft - Krafted by MK</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

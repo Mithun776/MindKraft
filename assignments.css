@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full viewport height */
+}
+
+/* Header and Navbar Styles */
+header {
+    display: flex;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto; /* Ensure it's on the right */
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #f3f2ee;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allow main to grow and fill space */
+    margin-top: 20px;
+    padding: 20px;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.semester {
+    margin-bottom: 20px;
+    width: 100%; /* Full width of the main content */
+    display: flex;
+    justify-content: center; /* Center the dropdown */
+}
+
+.semester select {
+    width: 200%; 
+    max-width: 500px; /* Optional: Set a max width */
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: auto; /* Push footer to the bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border for separation */
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Position below the header */
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        align-items: center; /* Center main content on smaller screens */
+    }
+
+    .semester {
+        margin-bottom: 15px;
+    }
+
+    .semester select {
+        font-size: 0.9em;
+        width: 100%; /* Full width on smaller screens */
+    }
+}

@@ -1,0 +1,213 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navbar Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #f3f2ee;
+}
+
+/* Introduction Styles */
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.intro-text {
+    flex: 0 0 70%;
+    margin-right: 20px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.intro-image {
+    flex: 0 0 30%;
+    padding: 15px;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Scholars Section */
+.scholar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Alternating alignment */
+.scholar:nth-child(odd) {
+    flex-direction: row-reverse; /* Reverse the order for even children */
+}
+
+.scholar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.scholar:nth-child(odd) img {
+    margin-right: 0; /* Remove margin when reversed */
+    margin-left: 20px; /* Add margin to the left */
+}
+
+.scholar p {
+    font-size: 1.1em;
+    text-align: left; /* Align text to the left */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Position below the header */
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    .introduction {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 1; /* Take full width on small screens */
+        padding: 10px; /* Inner padding */
+    }
+
+    .intro-image {
+        flex: 1; /* Take full width on small screens */
+        padding: 10px; /* Inner padding */
+    }
+
+    .scholar {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .scholar img {
+        margin: 0 0 10px 0; /* Remove margins */
+        width: 100px; /* Adjust image size for smaller screens */
+        height: 100px; /* Adjust height */
+    }
+
+    .scholar:nth-child(odd) {
+        flex-direction: column; /* Keep them stacked in column on small screens */
+    }
+}
