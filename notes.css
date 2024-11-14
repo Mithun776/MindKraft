@@ -11,7 +11,8 @@ body {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures body takes full viewport height */
+    min-height: 100vh;
+    /* Ensures body takes full viewport height */
 }
 
 /* Header and Navbar Styles */
@@ -24,15 +25,13 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    /* position: relative; */
-    /* flex-wrap: wrap; */
 }
 
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto; /* Ensure it's on the right */
+    margin-left: auto;
 }
 
 .line {
@@ -52,7 +51,6 @@ header h1 {
 nav {
     display: flex;
     align-items: center;
-    /* position: relative; */
 }
 
 nav ul {
@@ -80,37 +78,60 @@ nav ul li a:hover {
 
 /* Main Content Styles */
 main {
-    flex: 1; /* Allow main to grow and fill space */
+    flex: 1;
+    /* Allow main to grow and fill space */
     margin-top: 20px;
     padding: 20px;
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.assignment-sections {
+    width: 100%;
+    max-width: 1200px;
+    /* Optional: max-width for better readability */
+}
+
+/* Two-column layout for the semester sections */
 .semester {
-    margin-bottom: 20px;
-    width: 100%; /* Full width of the main content */
     display: flex;
-    justify-content: center; /* Center the dropdown */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.semester h3 {
+    width: 40%;
+    /* 40% of the width for the subject name */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+    /* Space between subject name and dropdown */
+}
+
+.semester .select-wrapper {
+    width: 55%;
+    /* 55% of the width for the dropdown */
 }
 
 .semester select {
-    width: 200%; 
-    max-width: 500px; /* Optional: Set a max width */
+    width: 100%;
     padding: 10px;
     font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* Footer Styles */
 footer {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
-    margin-top: auto; /* Push footer to the bottom */
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border for separation */
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 footer a {
@@ -131,21 +152,21 @@ footer a:hover {
     }
 
     nav ul {
-        display: none; /* Hide the menu by default */
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         position: absolute;
-        top: 60px; /* Position below the header */
+        top: 60px;
         left: 0;
     }
 
     nav ul.show {
-        display: flex; /* Show menu when toggled */
+        display: flex;
     }
 
     .hamburger {
-        display: flex; /* Show hamburger icon */
+        display: flex;
     }
 
     nav ul li {
@@ -154,15 +175,31 @@ footer a:hover {
     }
 
     main {
-        align-items: center; /* Center main content on smaller screens */
+        align-items: center;
     }
 
     .semester {
-        margin-bottom: 15px;
+        flex-direction: column;
+        /* Stack subject name and dropdown on top of each other */
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .semester h3 {
+        width: 100%;
+        /* Full width for subject name */
+        margin-right: 0;
+        /* Remove the margin between name and dropdown */
+        margin-bottom: 10px;
+        /* Add some space between name and dropdown */
+    }
+
+    .semester .select-wrapper {
+        width: 100%;
+        /* Full width for the dropdown */
     }
 
     .semester select {
         font-size: 0.9em;
-        width: 100%; /* Full width on smaller screens */
     }
 }
