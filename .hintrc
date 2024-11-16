@@ -4,6 +4,7 @@
   ],
   "hints": {
     "axe/forms": "off",
-    "axe/parsing": "off"
+    "axe/parsing": "off",
+    "no-inline-styles": "off"
   }
 }
